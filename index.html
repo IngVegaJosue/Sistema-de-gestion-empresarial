@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión Empresarial</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sistema de Gestión Empresarial</h1>
+    <nav>
+      <ul>
+        <li><a href="#section-gains">Ganancias</a></li>
+        <li><a href="#section-production">Producción</a></li>
+        <li><a href="#section-database">Base de Datos</a></li>
+        <li><a href="#section-losses">Pérdidas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección de Ganancias -->
+    <section id="section-gains">
+      <h2>Registrar Ganancias</h2>
+      <form id="gains-form">
+        <label for="gain-description">Descripción:</label>
+        <input type="text" id="gain-description" placeholder="Ingresa la descripción" required>
+        
+        <label for="gain-amount">Cantidad ($):</label>
+        <input type="number" id="gain-amount" placeholder="Ingresa la cantidad" required>
+        
+        <button type="submit">Registrar</button>
+      </form>
+      <h3>Ganancias Registradas</h3>
+      <ul id="gains-list"></ul>
+    </section>
+
+    <!-- Sección de Producción -->
+    <section id="section-production">
+      <h2>Registrar Producción</h2>
+      <form id="production-form">
+        <label for="production-item">Producto:</label>
+        <input type="text" id="production-item" placeholder="Nombre del producto" required>
+
+        <label for="production-quantity">Cantidad Producida:</label>
+        <input type="number" id="production-quantity" placeholder="Cantidad" required>
+        
+        <button type="submit">Registrar</button>
+      </form>
+      <h3>Producción Registrada</h3>
+      <ul id="production-list"></ul>
+    </section>
+
+    <!-- Sección de Base de Datos -->
+    <section id="section-database">
+      <h2>Gestión de Base de Datos</h2>
+      <p>Aquí puedes integrar tu base de datos para sincronizar la información con el backend.</p>
+    </section>
+
+    <!-- Sección de Pérdidas -->
+    <section id="section-losses">
+      <h2>Registrar Pérdidas</h2>
+      <form id="losses-form">
+        <label for="loss-description">Descripción:</label>
+        <input type="text" id="loss-description" placeholder="Descripción de la pérdida" required>
+        
+        <label for="loss-amount">Cantidad ($):</label>
+        <input type="number" id="loss-amount" placeholder="Monto perdido" required>
+        
+        <button type="submit">Registrar</button>
+      </form>
+      <h3>Pérdidas Registradas</h3>
+      <ul id="losses-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
